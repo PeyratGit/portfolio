@@ -4,3 +4,47 @@
   width: 100%;
   height: 1000px;
 }
+
+.project {
+  height: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  h3 {
+    font-size: 60px;
+  }
+  .technologies {
+    span {
+      color: rgb(255, 255, 255);
+      margin-right: 10px;
+    }
+  }
+  .images {
+    width: 50%;
+    height: 90%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    margin-right: -300px;
+    img {
+      &.primary {
+        height: 100%;
+        width: 30%;
+        object-fit: contain;
+      }
+    }
+    .secondaries {
+      overflow: hidden;
+      width: 50%;
+      height: 100%;
+      margin : 0;
+      img {
+        &.secondary {
+          height: 50%;
+          width: 32%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
