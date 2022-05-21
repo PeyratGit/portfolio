@@ -1,2 +1,2 @@
 # Portfolio
-My portofolio website done with HTML, CSS (SASS) and Javascript.
+My portfolio website done with HTML, CSS (SASS) and Javascript.
