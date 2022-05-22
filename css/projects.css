@@ -14,6 +14,15 @@
 .project h3 {
   font-size: 60px;
 }
+.project h3 i {
+  font-size: 40px;
+  margin-left: 20px;
+  color: white;
+  transition: all ease-in-out 0.3s;
+}
+.project h3 i:hover {
+  transform: scale(1.1);
+}
 .project .technologies span {
   color: rgb(255, 255, 255);
   margin-right: 10px;
@@ -54,17 +63,19 @@
   flex-direction: column;
   margin-right: -150px;
   align-items: center;
+  justify-content: center;
 }
 .project .images.pc .secondaries {
   overflow: hidden;
   width: 70%;
-  height: 50%;
+  height: 30%;
   margin: 0;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .project .images.pc .secondaries img.secondary {
-  height: 30%;
+  height: 37%;
   width: 50%;
   object-fit: contain;
 }
