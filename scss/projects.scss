@@ -24,25 +24,66 @@
     height: 90%;
     overflow: hidden;
     display: flex;
-    flex-direction: row;
-    margin-right: -300px;
-    img {
-      &.primary {
+    &.mobile {
+      flex-direction: row;
+      margin-right: -300px;
+      .secondaries {
+        overflow: hidden;
+        width: 50%;
         height: 100%;
-        width: 30%;
-        object-fit: contain;
+        margin: 0;
+        img {
+          &.secondary {
+            height: 50%;
+            width: 32%;
+            object-fit: contain;
+          }
+        }
+      }
+      img {
+        transition: all ease-in-out 0.5s;
+
+        &:hover {
+          transform: scale(0.9);
+        }
+
+        &.primary {
+          height: 100%;
+          width: 30%;
+          object-fit: contain;
+        }
       }
     }
-    .secondaries {
-      overflow: hidden;
-      width: 50%;
-      height: 100%;
-      margin : 0;
+    &.pc {
+      flex-direction: column;
+      margin-right: -150px;
+      align-items: center;
+      .secondaries {
+        overflow: hidden;
+        width: 70%;
+        height: 50%;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        img {
+          &.secondary {
+            height: 30%;
+            width: 50%;
+            object-fit: contain;
+          }
+        }
+      }
       img {
-        &.secondary {
-          height: 50%;
-          width: 32%;
+        transition: all ease-in-out 0.5s;
+
+        &:hover {
+          transform: scale(0.9);
+        }
+        &.primary {
+          height: 100%;
+          width: 100%;
           object-fit: contain;
+          margin-bottom: 10px;
         }
       }
     }
