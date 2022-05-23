@@ -1,0 +1,16 @@
+#skills {
+  background-color: black;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: min-content;
+  color: #f27200;
+}
+
+.skills-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}

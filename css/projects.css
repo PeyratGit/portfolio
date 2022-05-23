@@ -1,4 +1,4 @@
-.projects {
+#projects {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -91,5 +91,3 @@
   object-fit: contain;
   margin-bottom: 10px;
 }
-
-/*# sourceMappingURL=projects.css.map */
