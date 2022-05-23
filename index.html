@@ -9,10 +9,11 @@
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/banner.css">
   <link rel="stylesheet" href="css/projects.css">
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <title>Portfolio</title>
 </head>
 <body>
@@ -90,13 +91,13 @@
       <div class="images pc">
         <img class="primary" src="assets/images/projects/lebonmovie/Homepage.png" alt="" loading="lazy">
         <div class="secondaries">
-          <img src="assets/images/projects/lebonmovie/Genre.png" alt="" class="secondary" loading="lazy">
-          <img src="assets/images/projects/lebonmovie/Search.png" alt="" class="secondary" loading="lazy">
-          <img src="assets/images/projects/lebonmovie/Show.png" alt="" class="secondary" loading="lazy">
-          <img src="assets/images/projects/lebonmovie/Sell.png" alt="" class="secondary" loading="lazy">
-          <img src="assets/images/projects/lebonmovie/Purchase.png" alt="" class="secondary" loading="lazy">
-          <img src="assets/images/projects/lebonmovie/Requests.png" alt="" class="secondary" loading="lazy">
-          <img src="assets/images/projects/lebonmovie/Bookings.png" alt="" class="secondary" loading="lazy">
+          <img src="assets/images/projects/lebonmovie/Genre.png" alt="" class="secondary" loading="lazy" data-fancybox="gallery" fancybox-type="image">
+          <img src="assets/images/projects/lebonmovie/Search.png" alt="" class="secondary" loading="lazy" data-fancybox="gallery" fancybox-type="image">
+          <img src="assets/images/projects/lebonmovie/Show.png" alt="" class="secondary" loading="lazy" data-fancybox="gallery" fancybox-type="image">
+          <img src="assets/images/projects/lebonmovie/Sell.png" alt="" class="secondary" loading="lazy" data-fancybox="gallery">
+          <img src="assets/images/projects/lebonmovie/Purchase.png" alt="" class="secondary" loading="lazy" data-fancybox="gallery">
+          <img src="assets/images/projects/lebonmovie/Requests.png" alt="" class="secondary" loading="lazy" data-fancybox="gallery">
+          <img src="assets/images/projects/lebonmovie/Bookings.png" alt="" class="secondary" loading="lazy" data-fancybox="gallery">
         </div>
       </div>
     </div>
@@ -132,6 +133,10 @@
     </div>
   </div>
 
+  <script type="module">
+    import { Fancybox } from "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.esm.js";
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
