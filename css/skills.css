@@ -26,6 +26,8 @@
   padding: 20px;
   margin-bottom: -18px;
   padding-bottom: 30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .skills-menu .skill-title.active {
   background-color: white;
@@ -40,6 +42,7 @@
   height: 75%;
   border-radius: 15px;
   border-top-left-radius: 0;
+  overflow: hidden;
   transition: all ease-in-out 0.5s;
 }
 .skills-block .skills-list {
@@ -49,6 +52,15 @@
 .skills-block .skills-list.active {
   display: flex;
   flex-direction: row;
+  animation: 0.5s ease 1 forwards slidein;
+}
+@keyframes slidein {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 .skills-block img {
   width: 50px;
