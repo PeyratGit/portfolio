@@ -1,5 +1,6 @@
 const text = document.querySelector(".banner-title");
 const navBar = document.getElementById("navbar");
+const skillsTitles = document.querySelectorAll(".skill-title")
 
 function startAnimations() {
   text.innerHTML = "Clément Peyrat";
@@ -31,4 +32,13 @@ window.addEventListener("scroll", () => {
     navBar.style.top = "-60px";
   }
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+})
+
+skillsTitles.forEach(title => {
+  title.addEventListener("click", () => {
+    skillsTitles.forEach(title => {
+      title.classList.remove("active")
+    })
+    title.classList.add("active")
+  })
 })

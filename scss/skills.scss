@@ -5,6 +5,8 @@
   width: 100%;
   height: min-content;
   color: #f27200;
+  display: flex;
+  align-items: center;
 }
 
 .skills-menu {
@@ -13,4 +15,32 @@
   align-items: center;
   justify-content: space-evenly;
   color: white;
+  width: 100%;
+  .skill-title {
+    transition: all ease-in-out 1s;
+    padding: 20px;
+    &.active {
+      background-color: white;
+      color: #f27200;
+      margin-bottom: -18px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+  }
+}
+
+.skills-block {
+  background-color: white;
+  width: 76.5%;
+  height: 75%;
+  .skills-list {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+  img {
+    width: 50px;
+    height: 50px;
+  }
 }
