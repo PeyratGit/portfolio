@@ -4,6 +4,8 @@
   width: 100%;
   height: min-content;
   margin-bottom: 100px;
+  padding-top: 10px;
+  overflow: hidden;
 }
 
 .project {
@@ -52,8 +54,8 @@
   transform: scale(0.9);
 }
 .project .image img.pc {
-  width: 500px;
-  height: 250px;
+  width: 750px;
+  height: 420px;
 }
 .project .image img.mobile {
   width: 250px;

@@ -15,6 +15,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Portfolio</title>
 </head>
 <body>
@@ -39,8 +40,10 @@
     <p>Hi, my name is Clément Peyrat and I'm 20. </p>
   </div>
   <div id="projects">
-    <h2>Projects</h2>
-    <div class="project">
+    <div class="section-title">
+      Projects
+    </div>
+    <div class="project" data-aos="fade-up">
       <div class="resume">
         <h3>Lebonmovie<a href="https://github.com/SidneyOuarzazi/lebonmovie" target="_blank"><i
               class="fa-brands fa-github"></i></a><a href="https://lebonmovie-sidneyouarzazi.herokuapp.com/"
@@ -66,7 +69,7 @@
         </a>
       </div>
     </div>
-    <div class="project reversed">
+    <div class="project reversed" data-aos="fade-up">
       <div class="resume">
         <h3>Sitcom<a href="https://github.com/SidneyOuarzazi/sitcom" target="_blank"><i class="fa-brands fa-github"></i></a><a href="http://www.sitcom.live" target="_blank"><i class="fa-solid fa-globe"></i></a></h3>
         <p>A community website based on TV shows.
@@ -90,7 +93,7 @@
         </a>
       </div>
     </div>
-    <div class="project">
+    <div class="project" data-aos="fade-up">
       <div class="resume">
         <h3>Note It<a href="https://github.com/PeyratGit/notes-website" target="_blank"><i
               class="fa-brands fa-github"></i></a><a href="http://my-online-notes-service.herokuapp.com"
@@ -116,17 +119,17 @@
     </div>
   </div>
   <div id="skills">
-    <h2>Skills</h2>
+    <div class="section-title">Skills</div>
     <div class="skills-menu">
       <h3>Front-end</h3>
       <h3>Back-end</h3>
     </div>
   </div>
 
-  <script type="module">
-    import { Fancybox } from "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.esm.js";
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
   <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
