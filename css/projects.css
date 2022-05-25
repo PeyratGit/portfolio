@@ -23,6 +23,7 @@
   font-size: 60px;
 }
 .project h3 i {
+  padding: 1px;
   font-size: 40px;
   margin-left: 20px;
   color: white;
@@ -45,6 +46,10 @@
   align-items: center;
   width: min-content;
   height: min-content;
+  transition: all ease-in-out 0.5s;
+}
+.project .image:hover {
+  transform: scale(0.9);
 }
 .project .image img.pc {
   width: 500px;
