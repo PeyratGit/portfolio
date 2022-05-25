@@ -1,15 +1,24 @@
+.navbar-container {
+  top: 0;
+  position: fixed;
+  height: 75px;
+  width: 100%;
+  z-index: 1000;
+  &:hover nav {
+    top: 0 !important;
+  }
+}
 nav {
   font-family: 'Raleway';
   position: fixed;
   width: 100%;
-  top: -60px;
+  top: -75px;
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
   transition: all ease-in-out 0.5s;
   animation: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s 1 animated-navbar;
-
   ul {
     display: flex;
     align-items: center;
@@ -44,7 +53,7 @@ nav {
 
 @keyframes animated-navbar {
   from {
-    top: -60px;
+    top: -75px;
   }
 
   to {

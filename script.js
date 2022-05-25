@@ -2,6 +2,7 @@ const text = document.querySelector(".banner-title");
 const navBar = document.getElementById("navbar");
 const skillsTitles = document.querySelectorAll(".skill-title");
 const skillsLists = document.querySelectorAll(".skills-list");
+const skillsBlock = document.querySelector(".skills-block")
 
 function startAnimations() {
   text.innerHTML = "Clément Peyrat";
@@ -30,13 +31,20 @@ window.addEventListener("scroll", () => {
     navBar.style.backgroundColor = "transparent"
     navBar.style.backdropFilter = "none"
   } else {
-    navBar.style.top = "-60px";
+    navBar.style.top = "-75px";
   }
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 })
 
 skillsTitles.forEach(function callback(title, index) {
   title.addEventListener("click", () => {
+    if(index === 0) {
+      skillsBlock.style.borderTopLeftRadius = "0"
+    } else if(index === 4) {
+      skillsBlock.style.borderTopRightRadius = "0"
+    } else {
+      skillsBlock.style.borderRadius = "15px"
+    }
     skillsTitles.forEach(title => {
       title.classList.remove("active")
     })

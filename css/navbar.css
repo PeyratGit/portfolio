@@ -1,8 +1,19 @@
+.navbar-container {
+  top: 0;
+  position: fixed;
+  height: 75px;
+  width: 100%;
+  z-index: 1000;
+}
+.navbar-container:hover nav {
+  top: 0 !important;
+}
+
 nav {
   font-family: "Raleway";
   position: fixed;
   width: 100%;
-  top: -60px;
+  top: -75px;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -38,7 +49,7 @@ nav ul:last-of-type {
 
 @keyframes animated-navbar {
   from {
-    top: -60px;
+    top: -75px;
   }
   to {
     top: 0;
