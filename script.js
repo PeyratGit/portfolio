@@ -1,5 +1,5 @@
 const text = document.querySelector(".banner-title");
-const navBar = document.getElementById("navbar")
+const navBar = document.getElementById("navbar");
 
 function startAnimations() {
   text.innerHTML = "Clément Peyrat";

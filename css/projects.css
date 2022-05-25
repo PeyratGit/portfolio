@@ -2,14 +2,22 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 1000px;
+  height: min-content;
+  margin-bottom: 100px;
 }
 
 .project {
-  height: 50%;
+  width: 100%;
+  height: min-content;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: row;
+  padding: 10px;
+}
+.project.reversed {
+  flex-direction: row-reverse;
+  text-align: right;
 }
 .project h3 {
   font-size: 60px;
@@ -23,71 +31,26 @@
 .project h3 i:hover {
   transform: scale(1.1);
 }
+.project .resume {
+  width: 50%;
+  height: 100%;
+}
 .project .technologies span {
   color: rgb(255, 255, 255);
   margin-right: 10px;
 }
-.project .images {
-  width: 50%;
-  height: 90%;
-  overflow: hidden;
+.project .image {
   display: flex;
-}
-.project .images.mobile {
-  flex-direction: row;
-  margin-right: -300px;
-}
-.project .images.mobile .secondaries {
-  overflow: hidden;
-  width: 50%;
-  height: 100%;
-  margin: 0;
-}
-.project .images.mobile .secondaries img.secondary {
-  height: 50%;
-  width: 32%;
-  object-fit: contain;
-}
-.project .images.mobile img {
-  transition: all ease-in-out 0.5s;
-}
-.project .images.mobile img:hover {
-  transform: scale(0.9);
-}
-.project .images.mobile img.primary {
-  height: 100%;
-  width: 30%;
-  object-fit: contain;
-}
-.project .images.pc {
-  flex-direction: column;
-  margin-right: -150px;
-  align-items: center;
   justify-content: center;
-}
-.project .images.pc .secondaries {
-  overflow: hidden;
-  width: 70%;
-  height: 30%;
-  margin: 0;
-  display: flex;
-  flex-direction: row;
   align-items: center;
+  width: min-content;
+  height: min-content;
 }
-.project .images.pc .secondaries img.secondary {
-  height: 37%;
-  width: 50%;
-  object-fit: contain;
+.project .image img.pc {
+  width: 500px;
+  height: 250px;
 }
-.project .images.pc img {
-  transition: all ease-in-out 0.5s;
-}
-.project .images.pc img:hover {
-  transform: scale(0.9);
-}
-.project .images.pc img.primary {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  margin-bottom: 10px;
+.project .image img.mobile {
+  width: 250px;
+  height: 500px;
 }

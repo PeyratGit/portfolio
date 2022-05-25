@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 
+
 * {
   overflow-x: hidden;
   font-family: 'Raleway';
@@ -17,6 +18,8 @@ a {
 body {
   margin: 0;
   background-color: #f27200;
+  width: 100%;
+  height: 100%;
 }
 
 .orange {
@@ -25,12 +28,4 @@ body {
 
 .black {
   background-color: black;
-}
-
-.separation {
-  margin-left: 273px;
-  background-color: lightgrey;
-  width: 25%;
-  height: 6px;
-  border-radius: 50px;
 }
