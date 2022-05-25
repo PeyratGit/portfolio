@@ -39,8 +39,10 @@ window.addEventListener("scroll", () => {
 skillsTitles.forEach(function callback(title, index) {
   title.addEventListener("click", () => {
     if(index === 0) {
+      skillsBlock.style.borderTopRightRadius = "15px"
       skillsBlock.style.borderTopLeftRadius = "0"
     } else if(index === 4) {
+      skillsBlock.style.borderTopLeftRadius = "15px"
       skillsBlock.style.borderTopRightRadius = "0"
     } else {
       skillsBlock.style.borderRadius = "15px"
