@@ -37,9 +37,6 @@ body {
   width: min-content;
   height: min-content;
   padding: 25px;
-  margin-top: -23px;
-  border-bottom-left-radius: 80px;
-  border-bottom-right-radius: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
