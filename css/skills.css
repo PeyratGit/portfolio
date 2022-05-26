@@ -1,13 +1,10 @@
 #skills {
   background-color: black;
-  flex-direction: column;
   text-align: center;
   width: 100%;
   height: min-content;
   color: #f27200;
-  display: flex;
-  align-items: center;
-  padding: 20px;
+  padding: 200px 0 200px 0;
 }
 
 .skills-content {
@@ -29,6 +26,7 @@
   padding-bottom: 30px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  cursor: pointer;
 }
 .skills-menu .skill-title.active {
   background-color: white;
