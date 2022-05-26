@@ -36,6 +36,15 @@ window.addEventListener("scroll", () => {
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 })
 
+window.addEventListener("scroll", () => {
+  let height = window.innerHeight - window.scrollY;
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if(height <= 600) {
+    document.getElementById("photo").style.clipPath = "circle(50%)";
+  }
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+})
+
 skillsTitles.forEach(function callback(title, index) {
   title.addEventListener("click", () => {
     if(index === 0) {
