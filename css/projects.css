@@ -39,6 +39,7 @@
 .project .technologies {
   height: min-content;
   padding: 10px;
+  width: 100%;
 }
 .project .technologies span {
   border-radius: 15px;

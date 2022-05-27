@@ -61,3 +61,9 @@ p {
   border-radius: 15px;
   width: 40%;
 }
+
+@media screen and (max-width: 700px) {
+  .section-title .line {
+    width: 20%;
+  }
+}

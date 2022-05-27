@@ -26,10 +26,12 @@ nav ul {
   align-items: center;
 }
 nav ul li {
+  overflow: initial;
   display: flex;
   align-items: center;
   margin-right: 30px;
   font-weight: bold;
+  width: max-content;
 }
 nav ul li a {
   color: white;
@@ -82,4 +84,26 @@ nav ul:last-of-type {
 .button:hover:after {
   left: 120%;
   transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@media screen and (max-width: 700px) {
+  .navbar-container {
+    width: 100%;
+  }
+  .navbar-container nav {
+    width: 100%;
+  }
+  .navbar-container nav ul:first-of-type {
+    width: 100%;
+    padding: 0;
+    padding-left: 10px;
+    justify-content: space-around;
+  }
+  .navbar-container nav ul:first-of-type li {
+    width: min-content;
+    margin: 0;
+  }
+  .navbar-container nav ul:last-of-type {
+    display: none;
+  }
 }

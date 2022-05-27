@@ -19,3 +19,18 @@
     }
   }
 }
+
+@media screen and (max-width: 700px) {
+  #about {
+    .presentation {
+      flex-direction: column;
+      p {
+        width: 90%;
+      }
+      img {
+        width: 200px;
+        margin-top: 20px;
+      }
+    }
+  }
+}

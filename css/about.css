@@ -19,3 +19,16 @@
   clip-path: circle(0%);
   transition: ease-in-out 1s;
 }
+
+@media screen and (max-width: 700px) {
+  #about .presentation {
+    flex-direction: column;
+  }
+  #about .presentation p {
+    width: 90%;
+  }
+  #about .presentation img {
+    width: 200px;
+    margin-top: 20px;
+  }
+}
