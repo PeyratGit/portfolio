@@ -36,7 +36,12 @@
     height: 100%;
   }
   .technologies {
+    height: min-content;
+    padding: 10px;
     span {
+      border-radius: 15px;
+      border: 2px solid white;
+      padding: 5px;
       color: rgb(255, 255, 255);
       margin-right: 10px;
     }

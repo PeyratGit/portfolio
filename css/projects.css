@@ -36,7 +36,14 @@
   width: 50%;
   height: 100%;
 }
+.project .technologies {
+  height: min-content;
+  padding: 10px;
+}
 .project .technologies span {
+  border-radius: 15px;
+  border: 2px solid white;
+  padding: 5px;
   color: rgb(255, 255, 255);
   margin-right: 10px;
 }
