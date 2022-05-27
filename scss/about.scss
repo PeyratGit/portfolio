@@ -8,11 +8,14 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-  }
-  img {
-    width: 200px;
-    border-radius: 50%;
-    clip-path: circle(0%);
-    transition: ease-in-out 1s;
+    p {
+      width: 50%;
+    }
+    img {
+      width: 200px;
+      border-radius: 50%;
+      clip-path: circle(0%);
+      transition: ease-in-out 1s;
+    }
   }
 }

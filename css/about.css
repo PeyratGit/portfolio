@@ -10,7 +10,10 @@
   align-items: center;
   justify-content: space-around;
 }
-#about img {
+#about .presentation p {
+  width: 50%;
+}
+#about .presentation img {
   width: 200px;
   border-radius: 50%;
   clip-path: circle(0%);
