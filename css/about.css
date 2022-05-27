@@ -8,13 +8,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 #about .presentation p {
   width: 50%;
 }
 #about .presentation img {
-  width: 200px;
+  width: 300px;
   border-radius: 50%;
   clip-path: circle(0%);
   transition: ease-in-out 1s;
