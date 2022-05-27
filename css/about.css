@@ -1,6 +1,6 @@
 #about {
   padding: 50px 0 50px 0;
-  color: #f27200;
+  color: white;
 }
 #about .presentation {
   overflow: hidden;
@@ -11,7 +11,7 @@
   justify-content: space-around;
 }
 #about img {
-  width: 400px;
+  width: 200px;
   border-radius: 50%;
   clip-path: circle(0%);
   transition: ease-in-out 1s;
