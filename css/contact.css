@@ -35,3 +35,24 @@
 #contact .contact-links .contact-link a p {
   margin-left: 5px;
 }
+
+@media screen and (max-width: 900px) {
+  #contact .contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #contact .contact-links .contact-link {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 930px) {
+  #contact .contact-links {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1390px) {
+  #contact .contact-links {
+    width: 75%;
+  }
+}
