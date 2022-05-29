@@ -76,13 +76,4 @@
   .banner-title {
     font-size: 1.8em;
   }
-
-  @keyframes animated-text {
-    from {
-      width: 0;
-    }
-    to {
-      width: 230px;
-    }
-  }
 }
