@@ -48,6 +48,9 @@
   .skills-list {
     justify-content: center;
     display: none;
+    &:hover, &:focus {
+      outline: none;
+    }
     &.active {
       display: flex;
       flex-direction: row;

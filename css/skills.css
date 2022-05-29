@@ -50,6 +50,9 @@
   justify-content: center;
   display: none;
 }
+.skills-block .skills-list:hover, .skills-block .skills-list:focus {
+  outline: none;
+}
 .skills-block .skills-list.active {
   display: flex;
   flex-direction: row;
