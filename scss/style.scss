@@ -72,6 +72,16 @@ p {
   }
 }
 
+@media screen and (max-width: 450px) {
+  #contact {
+    .section-title {
+      .line {
+        width: 15%;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 450px) {
   #contact {
     .section-title {

@@ -80,3 +80,8 @@
     width: 97%;
   }
 }
+@media screen and (max-width: 400px) {
+  .skills-menu .skill-title {
+    font-size: 16px;
+  }
+}

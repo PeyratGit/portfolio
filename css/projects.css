@@ -1,7 +1,6 @@
 #projects {
   width: 100%;
   height: min-content;
-  margin-bottom: 100px;
   padding-top: 10px;
   overflow: hidden;
   padding: 10px;
@@ -90,7 +89,11 @@
     width: 90%;
   }
   .project .resume h3, .project.reversed .resume h3 {
+    font-size: 50px;
     text-align: center;
+  }
+  .project .image.pc, .project.reversed .image.pc {
+    width: 80%;
   }
   .project .image.pc a, .project.reversed .image.pc a {
     width: 100%;
