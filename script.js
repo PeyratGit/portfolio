@@ -22,11 +22,11 @@ let height = window.innerHeight - window.scrollY;
 window.addEventListener("scroll", () => {
   let height = window.innerHeight - window.scrollY;
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  if (scrollTop > lastScrollTop && height <= 60) {
+  if (scrollTop < lastScrollTop && height <= 60) {
     navBar.style.top = "0";
     navBar.style.backgroundColor = "rgba(0,0,0,0.8)"
     navBar.style.backdropFilter = "blur(8px)"
-  } else if (scrollTop > lastScrollTop && height > 60) {
+  } else if (scrollTop < lastScrollTop && height > 60) {
     navBar.style.top = "0";
     navBar.style.backgroundColor = "transparent"
     navBar.style.backdropFilter = "none"

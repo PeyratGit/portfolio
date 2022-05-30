@@ -49,6 +49,7 @@
 .skills-block .skills-list {
   justify-content: center;
   display: none;
+  overflow: hidden;
 }
 .skills-block .skills-list:hover, .skills-block .skills-list:focus {
   outline: none;
@@ -76,6 +77,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all ease-in-out 0.5s;
+}
+.skills-block a:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 1135px) {
