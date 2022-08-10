@@ -107,3 +107,14 @@ nav ul:last-of-type {
     display: none;
   }
 }
+@media screen and (max-width: 700px) {
+  ul {
+    font-size: 14px;
+  }
+
+  #about-nav-link {
+    width: 68px;
+  }
+}
+
+/*# sourceMappingURL=navbar.css.map */

@@ -88,8 +88,18 @@
     width: 97%;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   .skills-menu .skill-title {
     font-size: 16px;
   }
+
+  .skills-list img {
+    width: 30px;
+    height: 30px;
+  }
+  .skills-list span {
+    font-size: 10px;
+  }
 }
+
+/*# sourceMappingURL=skills.css.map */

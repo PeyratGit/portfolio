@@ -28,7 +28,6 @@ var lastScrollTop = 0;
 window.addEventListener("scroll", () => {
   let height = window.innerHeight - window.scrollY;
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  console.log(`ScrollTop : ${scrollTop}, LastScrollTop : ${lastScrollTop}`)
   if (scrollTop > lastScrollTop && height <= 60) {
     navBar.style.top = "0";
     navBar.style.backgroundColor = "rgba(0,0,0,0.8)"
