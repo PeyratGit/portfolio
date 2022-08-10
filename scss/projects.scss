@@ -1,104 +1,266 @@
 #projects {
   width: 100%;
   height: min-content;
-  padding-top: 10px;
   overflow: hidden;
-  padding: 10px;
+  padding: 10px 15px 10px 0px;
 }
 
-.project {
-  width: 100%;
-  height: min-content;
+.project-card {
+  box-shadow: 0px 0px 17px -3px #000000;
+  margin-bottom: 1em;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: row;
-  padding: 10px;
-  &.reversed {
-    flex-direction: row-reverse;
-    text-align: right;
-  }
-  h3 {
-    font-size: 60px;
-    i {
-      padding: 1px;
-      font-size: 40px;
-      margin-left: 20px;
-      color: white;
-      transition: all ease-in-out 0.3s;
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
-  }
-  .resume {
-    width: 50%;
-    height: 100%;
-  }
-  .technologies {
+  position: relative ;
+  flex-direction: column;
+  max-width: 600px;
+  max-height: 600px;
+  width: 90%;
+  height: 50%;
+  border: 10px black solid;
+  transition: all ease-in-out .2s;
+  .project-top-block {
     display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    height: min-content;
-    padding: 10px;
-    width: 100%;
-    span {
-      border-radius: 15px;
-      border: 2px solid white;
+    overflow: hidden;
+    height: 60%;
+    width: 101%;
+    position: relative;
+  }
+  .project-bottom-block {
+    height: 40%;
+    overflow: hidden;
+    p {
       padding: 5px;
-      color: rgb(255, 255, 255);
-      margin-right: 10px;
+      text-align: center;
+      height: 50%;
+      font-size: 14px;
     }
   }
-  .image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: min-content;
-    height: min-content;
-    transition: all ease-in-out 0.5s;
-    width: 50%;
+  img {
+    width: 100%;
     height: 100%;
-    &:hover {
-      transform: scale(0.9);
-    }
-    &.pc {
-      a {
-        width: 75%;
-        height: 75%;
-      }
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
-    &.mobile {
-      width: min-content;
-      img {
-        width: 250px;
-        height: 500px;
-      }
+    z-index: 1;
+    object-fit: cover;
+  }
+  .project-title {
+    width: 100%;
+    padding: 3% 0 3% 0;
+    text-align: center;
+    background-color: rgba($color: grey, $alpha: 0.2);
+    color: white;
+    z-index: 2;
+    position: absolute;
+    bottom: 1px;
+  }
+  .techs {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0 5px 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+  }
+  &:hover {
+    transform: scale(1.005);
+  }
+}
+
+#sitcom-card {
+  display: flex;
+  flex-direction: column;
+  width: 62%;
+  .techs {
+    padding: 5px 0 4% 0;
+    font-size: 7px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  #sitcom-card {
+    width: 52%;
+  .techs {
+    padding: 5px 0 15% 0;
+    font-size: 9px;
+  }
+ }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  #sitcom-card {
+    width: 42%;
+    .techs {
+      padding: 5px 0 15% 0;
+      font-size: 10px;
     }
   }
 }
 
-@media screen and (max-width: 700px) {
-  .project, .project.reversed {
-    text-align: left;
-    flex-direction: column;
-    .resume {
-      width: 90%;
-      h3 {
-        font-size: 50px;
-        text-align: center;
-      }
-    }
-    .image.pc {
-      width: 80%;
-      a {
-        width: 100%;
-        height: 100%;
-      }
+@media screen and (min-width: 700px) and (max-width: 800px) {
+  #sitcom-card {
+    .techs {
+      padding: 5px 0 20% 0;
+      font-size: 10px;
     }
   }
 }
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  #sitcom-card {
+    width: 32%;
+    .techs {
+      padding: 5px 0 10% 0;
+      font-size: 11px;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  #sitcom-card {
+    width: 32%;
+    .techs {
+      padding: 5px 0 15% 0;
+      font-size: 11px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  #sitcom-card {
+    width: 25%;
+    .techs {
+      padding: 5px 0 15% 0;
+      font-size: 11px;
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1700px) {
+  #sitcom-card {
+    width: 25%;
+
+    .techs {
+      padding: 5px 0 15% 0;
+      font-size: 11px;
+    }
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  #sitcom-card {
+    width: 16%;
+
+    .techs {
+      padding: 5px 0 10% 0;
+      font-size: 11px;
+    }
+
+    .project-title {
+      background-color: rgba($color: grey, $alpha: 0.6);
+      margin-bottom: -5px;
+    }
+  }
+}
+
+a {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+
+// .project {
+//   width: 100%;
+//   height: min-content;
+//   display: flex;
+//   justify-content: space-evenly;
+//   align-items: center;
+//   flex-direction: row;
+//   padding: 10px;
+//   &.reversed {
+//     flex-direction: row-reverse;
+//     text-align: right;
+//   }
+//   h3 {
+//     font-size: 60px;
+//     i {
+//       padding: 1px;
+//       font-size: 40px;
+//       margin-left: 20px;
+//       color: white;
+//       transition: all ease-in-out 0.3s;
+//       &:hover {
+//         transform: scale(1.1);
+//       }
+//     }
+//   }
+//   .resume {
+//     width: 50%;
+//     height: 100%;
+//   }
+//   .technologies {
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 5px;
+//     height: min-content;
+//     padding: 10px;
+//     width: 100%;
+//     span {
+//       border-radius: 15px;
+//       border: 2px solid white;
+//       padding: 5px;
+//       color: rgb(255, 255, 255);
+//       margin-right: 10px;
+//     }
+//   }
+//   .image {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: min-content;
+//     height: min-content;
+//     transition: all ease-in-out 0.5s;
+//     width: 50%;
+//     height: 100%;
+//     &:hover {
+//       transform: scale(0.9);
+//     }
+//     &.pc {
+//       a {
+//         width: 75%;
+//         height: 75%;
+//       }
+//       img {
+//         width: 100%;
+//         height: 100%;
+//       }
+//     }
+//     &.mobile {
+//       width: min-content;
+//       img {
+//         width: 250px;
+//         height: 500px;
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 700px) {
+//   .project, .project.reversed {
+//     text-align: left;
+//     flex-direction: column;
+//     .resume {
+//       width: 90%;
+//       h3 {
+//         font-size: 50px;
+//         text-align: center;
+//       }
+//     }
+//     .image.pc {
+//       width: 80%;
+//       a {
+//         width: 100%;
+//         height: 100%;
+//       }
+//     }
+//   }
+// }
